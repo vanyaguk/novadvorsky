@@ -1,0 +1,280 @@
+html {
+    margin: 0px;
+}
+:root {
+    --clr: ;
+    --cl2: ;
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #C69B7B;
+}
+
+::selection {
+  color: white;
+  background: #C69B7B;
+}
+@font-face {
+  font-family: RozoviiChulok;
+  src: url(Assets/RozoviiChulok.otf);
+}
+body {
+    max-width: 100%;
+    min-width: 200px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+    margin: 0px;
+}
+.header {
+    height: 60px;
+}
+.header h4 {
+    font-weight: 300;
+    text-align: center;
+}
+.first {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 30px;
+}
+.first div {
+    max-width: 500px;
+    padding-right: 50px;
+}
+.first a, .second a, .third a, .fourth a {
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid white;
+    border-radius: 15px;
+    outline: 1px solid #3A3845;
+    outline-offset: -5px;
+    margin-right: 4px;
+}
+.gallery a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 17px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 15px;
+    outline: 1px solid white;
+    outline-offset: -5px;
+    margin-right: 4px;
+}
+.first span, .second span, .third span, .fourth span, .gallery span {
+    margin-left: 10px;
+}
+.first img {
+     transform: rotate(3deg);
+}
+.first h2 {
+    font-family: RozoviiChulok;
+    font-weight: 100;
+    font-size: 35px;
+}
+.buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gallery {
+    width: 120%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #3A3845;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: #fff;
+    overflow: hidden;
+}
+.gallery_text {
+    position: absolute;
+    text-align: center;
+}
+.gallery_photo {
+    width: 29%;
+    border: 1px solid white;
+}
+.gallery_photo::after {
+    content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.contact {
+    display: flex;
+    height: 600px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.navigation {
+    position: fixed;
+    top: 85%;
+    width: 260px;
+    height: 70px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 15px;
+    outline: 1px solid #3A3845;
+    outline-offset: -5px;
+}
+.navigation ul {
+    display: flex;
+    padding: 0px;
+}
+.navigation ul li {
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.navigation ul li a {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    font-weight: 500;
+}
+.navigation ul li a .icon {
+    position: relative;
+    display: block;
+    line-height: 75px;
+    font-size: 1.5em;
+    text-align: center;
+    transition: 0.5s;
+    color: #3A3845;
+}
+.navigation ul li.active a .icon {
+    transform: translateY(-45px);
+    color: #3A3845;
+}
+.navigation ul li a .text {
+    position: absolute;
+    color: #3A3845;
+    font-weight: 600;
+    font-size: 0.75em;
+    letter-spacing: 0.01em;
+    transition: 0.5s;
+    opacity: 0;
+    text-align: center;
+    transform: translateY(30px);
+}
+.navigation ul li.active a .text {
+    opacity: 1;
+    transform: translateY(-30px);
+}
+.indicator {
+    position: absolute;
+    top: -60%;
+    width: 70px;
+    height: 70px;
+    background-color: white;
+    border-radius: 50%;
+    border: 6px solid white;
+    transition: 0.5s;
+
+}
+.indicator::before {
+    content: '';
+    position: absolute;
+    top: 56%;
+    left: -15px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top-right-radius: 10px;
+    box-shadow: 1px -4px 0 0 white;
+}
+.indicator::after {
+    content: '';
+    position: absolute;
+    top: 56%;
+    right: -15px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-top-left-radius: 10px;
+    box-shadow: -1px -4px 0 0 white;
+}
+.navigation ul li:nth-child(1).active ~ .indicator {
+    transform: translateX(calc(-5px));
+}
+.navigation ul li:nth-child(2).active ~ .indicator {
+    transform: translateX(calc(64px * 1));
+}
+.navigation ul li:nth-child(3).active ~ .indicator {
+    transform: translateX(calc(67px * 2));
+}
+.second, .fourth {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.third {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.second img, .third img, .fourth img {
+         position: absolute;
+        width: 250px;
+		z-index: -1;
+	}
+	#one {
+		transform: translateX(-90px) translateY(20px) rotate( -20deg );
+	}
+	#two {
+		transform: translateX(-40px) translateY(-20px)  rotate( -10deg );
+	}
+	#three {
+        position: relative;
+		transform: rotate( -2deg );
+	}
+    .third #one {
+		transform: translateX(90px) translateY(20px) rotate( 20deg );
+	}
+	.third #two {
+		transform: translateX(40px) translateY(-20px)  rotate( 10deg );
+	}
+	.third #three {
+        position: relative;
+		transform: rotate( 2deg );
+	}
+.polaroid {
+    display: flex;
+
+}
+.portfolio {
+
+    max-width: 500px;
+    padding: 50px;
+
+}
