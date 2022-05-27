@@ -30,25 +30,24 @@ function menushown() {
   $(document).ready(function() {
     $(window).scroll(function() {
   
-      if ($(window).scrollTop() < $("#div01").height()) {
-        $(".price01").show();//true
-        $(".price02").hide();
-        $(".price03").hide();
-        $(".price04").hide();
+      if ($(window).scrollTop() < 100) {
+        $(".price01").style.opacity = "1";
+        $(".price02").style.opacity = "0";
+        $(".price03").style.opacity = "0";
+        $(".price04").style.opacity = "0";
 
-      } else if ($(window).scrollTop() < $("#div01").height() * 2) { 
-        $(".price02").show();//true
-        $(".price02").hide();
+      } else if ($(window).scrollTop() > 10 < 20) { 
+        $(".price02").style.opacity = "1";
+        $(".price02").style.opacity = "0";
         
-      } else if ($(window).scrollTop() < $("#div01").height() * 3) { 
-        $(".price03").show();//true
-        $(".price03").hide();
+      } else if ($(window).scrollTop() > 20 < 30) { 
+        $(".price03").style.opacity = "1";
+        $(".price03").style.opacity = "0";
         
-      } else if ($(window).scrollTop() < $("#div01").height() * 4) { 
-        $(".price04").show();//true
-        $(".price04").hide(); 
+      } else if ($(window).scrollTop() > 30 < 50) { 
+        $(".price04").style.opacity = "1";
+        $(".price04").style.opacity = "0";
       }
     });
   });
-  
   
