@@ -1222,6 +1222,6 @@ nav i {
   margin-top: 9px;
   margin-left: 16px;
 }
-nav ion-icon {
+nav div ion-icon {
   margin-top: 8px !important;
 }
