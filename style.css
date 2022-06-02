@@ -1219,6 +1219,9 @@ nav i {
   font-size: 25px !important;
   color: rgba(0, 0, 0, 0.795);
   vertical-align: top;
-  margin-top: 2px;
+  margin-top: 9px;
   margin-left: 15px;
+}
+nav ion-icon {
+  margin-top: 7px !important;
 }
