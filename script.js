@@ -31,6 +31,7 @@ function menushown() {
     // Optional parameters
     direction: 'horizontal',
     loop: true,
+    effect: "fade",
   
     // If we need pagination
     pagination: {
