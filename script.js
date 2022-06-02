@@ -27,27 +27,27 @@ function menushown() {
     document.getElementById("container").style.paddingLeft = "0%";
   }
 
-  $(document).ready(function() {
-    $(window).scroll(function() {
+  const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: true,
   
-      if ($(window).scrollTop() < 100) {
-        $(".price01").style.opacity = "1";
-        $(".price02").style.opacity = "0";
-        $(".price03").style.opacity = "0";
-        $(".price04").style.opacity = "0";
-
-      } else if ($(window).scrollTop() > 10 < 20) { 
-        $(".price02").style.opacity = "1";
-        $(".price02").style.opacity = "0";
-        
-      } else if ($(window).scrollTop() > 20 < 30) { 
-        $(".price03").style.opacity = "1";
-        $(".price03").style.opacity = "0";
-        
-      } else if ($(window).scrollTop() > 30 < 50) { 
-        $(".price04").style.opacity = "1";
-        $(".price04").style.opacity = "0";
-      }
-    });
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  
+    // And if we need scrollbar
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
   });
+
+
   

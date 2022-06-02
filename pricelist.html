@@ -7,19 +7,22 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
 
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <body>
-  <a class="nextPrice price01" href="#div02"><ion-icon name="arrow-down-outline"></ion-icon>Сьемка для двоих</a>
-  <a class="nextPrice price02" href="#div03"><ion-icon name="arrow-down-outline"></ion-icon>Семейная сьемка</a>
-  <a class="nextPrice price03" href="#div04"><ion-icon name="arrow-down-outline"></ion-icon>Контент сьемка</a>
-  <a class="nextPrice price04" href="#div03"><ion-icon name="arrow-up-outline"></ion-icon>Cемейная сьемка</a>
+
+
     <div id="menu">
         <ion-icon id="menuHide" onclick="menuhide()" style="font-size: 32px;" name="close-outline"></ion-icon>
         <ul id="menuInner">
             <li><a href="index.html">Галерея</a></li>
             <li><a class="active">Цены</a></li>
-            <li><a>Связаться со мной</a></li>
-            <li><ion-icon name="logo-instagram"></ion-icon><a id="instaInner">Мой Instagram</a></li>
+            <li><a href="contact.html">Связаться со мной</a></li>
+            <li><ion-icon name="logo-instagram"></ion-icon><a id="instaInner"  href="https://www.instagram.com/novadvorsky/">Мой Instagram</a></li>
         </ul>
     </div>
     <nav>
@@ -63,43 +66,38 @@
                 </figure>
             </div>
             
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/8b1cWDyvT7Y" />
-               
-              
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/5VXH4RG88gc" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/XtUd5SiX464">
-                
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/JYGnB9gTCls" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/-RBuQ2PK_L8" />
-               
-             
-              </figure>
-            </div>
+ 
+
             
           </div>
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/1.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/2.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/3.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/4.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/5.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/6.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/7.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/8.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/9.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/10.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/11.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/Individual/12.JPG);"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+        
+          </div>
+
 
           <div class="grid" id="div02">
             <div class="column-xs-12  textPort">
@@ -129,42 +127,37 @@
                 </figure>
             </div>
             
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/8b1cWDyvT7Y" />
-               
-              
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/5VXH4RG88gc" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/XtUd5SiX464">
-                
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/JYGnB9gTCls" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/-RBuQ2PK_L8" />
-               
-             
-              </figure>
-            </div>
             
+    
+          </div>
+
+
+          <!-- Slider main container -->
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/1.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/2.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/3.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/4.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/5.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/6.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/7.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/8.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/9.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/10.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/11.JPG);"></div>
+              <div class="swiper-slide" style="background-image: url(Assets/photos/para/12.JPG);"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          
+        
           </div>
 
           <div class="grid" id="div03">
@@ -195,48 +188,42 @@
                 </figure>
             </div>
             
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/8b1cWDyvT7Y" />
-               
-              
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/5VXH4RG88gc" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/XtUd5SiX464">
-                
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/JYGnB9gTCls" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/-RBuQ2PK_L8" />
-               
-             
-              </figure>
-            </div>
+        
             
           </div>
+
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/1.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/2.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/3.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/4.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/5.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/6.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/7.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/8.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/9.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/10.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/11.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/semja/12.JPG);"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+
+</div>
 
 
           <div class="grid" id="div04">
             <div class="column-xs-12  textPort">
-              <figure class="img-container">
+              <div class="img-container">
                 <div class="portInner">
                 <div><h1>КОНТЕНТ СЪЕМКА - от 100 евро</h1>
                 <h2>— Для блогеров, коммерческих страничек, тем кому нужно наполнение социальных сетей фотографиями, магазины, кафе и другое</h2>
@@ -259,60 +246,54 @@
                   <a>Заполнить анкету</a>
                 <a  href="https://www.instagram.com/novadvorsky/" target="_blank"><ion-icon name="logo-instagram"></ion-icon>Написать в direct</a>
                 </div>
-                </figure>
+              </div>
             </div>
             
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/8b1cWDyvT7Y" />
-               
-              
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/5VXH4RG88gc" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-4">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/XtUd5SiX464">
-                
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/JYGnB9gTCls" />
-               
-               
-              </figure>
-            </div>
-            <div class="column-xs-12 column-md-6">
-              <figure class="img-container">
-                <img src="https://source.unsplash.com/-RBuQ2PK_L8" />
-               
-             
-              </figure>
-            </div>
+         
             
           </div>
 
+<!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/1.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/2.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/3.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/4.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/5.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/6.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/7.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/8.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/9.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/10.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/11.JPG);"></div>
+    <div class="swiper-slide" style="background-image: url(Assets/photos/kontent/12.JPG);"></div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
 
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+
+</div>
 
         </div>
       </section>
+     
       <footer>
         <div class="container">
           <div class="grid">
             <div class="column-xs-12">
+             
               <ul class="social">
-                <li><a href="https://www.instagram.com/novadvorsky/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                <li><a id="footerName" href="https://www.instagram.com/novadvorsky/" target="_blank" rel="noopener noreferrer"><ion-icon name="logo-instagram"></ion-icon><p>@novadvorsky</p></a></li>
               
               </ul>
-              <p class="copyright">&copy; Copyright 2022 Alona Novadvorksy<br> Design and coded by Ivan Guk</p>
+              <p class="copyright">&copy; Copyright 2022 Alona Novadvorksy<br> Design and coded by <a href="https://www.instagram.com/ivan.guk/">Ivan Guk</a></p>
             </div>
           </div>
         </div>
