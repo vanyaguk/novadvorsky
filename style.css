@@ -836,6 +836,7 @@ img:hover {
 }
 
 footer {
+  width: 100%;
   padding: 1rem 0;
   background: #f7f7f7;
   text-align: center;
@@ -1049,6 +1050,12 @@ li a {
     font-size: 16px;
     margin: 7px;
   }
+  form {
+    width: 95% !important;
+  }
+  nav i {
+    display: none !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
 .swiper {
@@ -1073,4 +1080,145 @@ li a {
     margin: 20%;
   }
 
+}
+/* Form design */
+.foorm {
+  width: 100%;
+  font-family: "Nunito", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100px;
+  color: black;
+}
+form span {
+  font-size: 20px;
+}
+form {
+  padding-top: 25px;
+  width: 35%;
+}
+form img {
+  vertical-align: middle;
+  margin-left: 4px;
+}
+.form-element {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+}
+.form-element span {
+  margin-bottom: 10px;
+
+}
+input {
+  height: 50px;
+}
+textarea {
+  height: 200px;
+}
+input, textarea {
+  font-family: 'Nunito Sans', sans-serif;
+  padding: 10px;
+  border: 2px solid #2e2e2e56;
+  border-radius: 30px;
+  padding-left: 20px;
+}
+form button {
+  width: 100%;
+  padding: 15px;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 16px;
+  border: 2px solid #1f1f1f;
+  border-radius: 30px;
+  text-align: center;
+  background:
+  linear-gradient(
+    to bottom, var(--mainColor3) 0%,
+    var(--mainColor3) 100%
+  );
+  background-position: 0 5 100%;
+  background-repeat: repeat-x;
+  background-size: 0px 0px;
+  text-decoration: none;
+  transition: all .4s;
+  cursor: pointer;
+}
+form button:hover {
+   color: black;
+   background-size: 4px 60px;
+   border-color: rgba(255, 255, 255, 0);
+   transform: scale(1.0);
+}
+form h1 {
+  text-align: center;
+  font-size: 4vh;
+}
+form ::placeholder {
+  opacity: 40%;
+  font-size: 16px;
+  font-family: 'Nunito Sans', sans-serif;
+}
+form p {
+  font-weight: 300;
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#formdone {
+  width: 100%;
+  padding: 15px;
+  border-style: solid;
+  border-width: 1px;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  text-decoration: none;
+  transition: all .4s;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  user-select:none;
+  display: none;
+}
+.buttonsPort2 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+.buttonsPort2 a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin: 15px;
+  padding: 15px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border: 2px solid rgba(0, 0, 0, 0.5) ;
+  border-radius: 27px;
+  width: 250px;
+}
+.buttonsPort2 i {
+  padding-right: 10px;
+}
+.buttonsPort2 a:hover {
+  border-color: black;
+}
+.buttonsPort2 a ion-icon {
+  margin-right: 10px;
+}
+nav i {
+  font-size: 25px !important;
+  color: rgba(0, 0, 0, 0.795);
+  vertical-align: top;
+  margin-top: 2px;
+  margin-left: 15px;
 }

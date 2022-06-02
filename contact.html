@@ -4,6 +4,8 @@
 <title>Pricelist | @novadvorsky</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -30,46 +32,48 @@
         <ion-icon class="menuIconMob" onclick="menushown2()" style="font-size: 32px;" name="menu-outline"></ion-icon>
             
               <p id="highlight">novadvorsky</p>
-           
-              <ion-icon name="logo-instagram"></ion-icon>
-        
+              <div>
+                <a  href="https://www.instagram.com/novadvorsky/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://t.me/novadvorsky/" target="_blank"><i class="fa fa-telegram"></i></a>
+              
+              </div>
       </nav>
       
-      <section class="gallery">
-        <div class="container" id="container">
-          <div class="grid" id="div01">
-            <div class="column-xs-12 textPort">
-              <figure class="img-container">
-                <div class="portInner">
-                <div><h1>Индивидуальная - 70€</h1>
-                <h2>— для одной персоны</h2>
-                
-              </div>
-             
-                <p class="showText"><br> ⁃ Предоплата - 15 евро
-                  <br> ⁃ Возможность перенести время съемки 2 раза (в случае полной отмены предоплата не возвращается)
-                  <br> ⁃ Съемка до 1,5 часа 
-                  <br> ⁃ До 3 образов 
-                  <br> ⁃ Помощь в выборе места и образа, помощь в позировании
-                  <br> ⁃ От 50 фотографий в моей обработке (+ дубляж в черно-белом варианте) 
-                  <br> ⁃ Готовность фотографий в течении 10-14 дней 
-                  <br> ⁃ Личная онлайн галерея с фотографиями на месяц 
-                  <br> ⁃ Несколько видео со съемки за доплату - 20 евро
-                  <br> ⁃ Аренда студии в цену не входит
-                  <br> ⁃ Цена может меняться в зависимости от срочности / местонахождения / дополнительного времени</p>
-               
-                </div>
-                <div class="buttonsPort">
-                  <a>Заполнить анкету</a>
-                <a  href="https://www.instagram.com/novadvorsky/" target="_blank"><ion-icon name="logo-instagram"></ion-icon>Написать в direct</a>
-                </div>
-                </figure>
-            </div>
-            
- 
+      <div class="foorm" id="contacts">
 
-            
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdA8vhbKOez5PW_0NxCfswJjEl5mPWjHcV-Vf8yuvgmSYa_vg/formResponse" method="post">
+          <h1>Связаться со мной</h1>
+          <div>
+          <p>Можете связаться со мной, заполнив анкету снизу, либо написать мне в личные сообщения в Instagram или в Telegram</p>
+          <div class="buttonsPort2">
+            <a href="https://t.me/novadvorsky/" target="_blank"><i class="fa fa-telegram"></i>Telegram</a>
+          <a  href="https://www.instagram.com/novadvorsky/" target="_blank"><ion-icon name="logo-instagram"></ion-icon>Instagram</a>
           </div>
+          </div>
+          <div class="form-element">
+            <span>Как вас зовут?</span>
+            <input type="text" name="entry.6926519" placeholder="Алёна" required>
+          </div>
+    
+          <div class="form-element">
+            <span>Электронная почта:</span>
+            <input type="email" name="entry.1278271659" placeholder="E-mail" required>
+          </div>
+    
+          <div class="form-element">
+            <span>Номер телефона:</span>
+            <input type="tel" name="entry.961979501" placeholder="+371 ..." required>
+          </div>
+    
+          <div class="form-element">
+            <span>Сообщение:</span>
+            <textarea name="entry.652131589" id="" cols="30" rows="10"  placeholder="..." required></textarea>
+          </div>
+    
+          <button class="formbut" id="formbut" type="submit">Отправить сообщение</button>
+          <div id="formdone">Сообщение отправлено! Скоро вам ответим!</div>
+        </div>
+        </form>
          
       <footer>
         <div class="container">
